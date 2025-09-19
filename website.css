@@ -1,0 +1,612 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: inline-block;
+}
+/*for future reference if you want the scroll bar to be 
+hidden from one single dimension add overflow-x: (x axis) 
+as hidden to the body element to ensure things aren't overflowing*/
+body {
+	overflow-x: hidden;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+section{
+    width: 90%;
+    height:700px;
+    background-image: url(https://1000logos.net/wp-content/uploads/2022/06/Polaroid-logo.png);
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    scale: 50%;
+    
+}
+
+.submain {
+    font-size: 5em;
+    transform: translate(10px,600px);
+    transition: transform 0.5s ease-in-out;
+    border-radius: 10px;
+
+}
+ 
+.submain:hover{
+
+    transform: translate(10px,590px);
+    color: white;
+    background-color: rgb(175, 156, 156);
+    border-radius: 20px;
+    cursor: pointer;
+
+
+}
+
+.submain:active{
+    color:orange;
+    background-color: rgb(203, 198, 188);
+    
+
+}
+
+.sidebar{
+    font-size: 1em;
+    margin:10px;
+    transform: translate(-600px,-1000px);
+
+}
+
+#footer{
+    font-family: Arial, Helvetica, sans-serif;
+    transform: translate(600px,70px)
+}
+
+footer{
+    transform: translateY(-100px);
+}
+
+.banner{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(169, 162, 162);
+    position: fixed;
+    z-index: 1;
+
+
+}
+.bannerheader{
+    color: white;
+    
+}
+nav{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top:10px;
+    opacity: 1;
+}
+nav li{
+    display: inline-flex;
+    margin: 20px;
+    color:#F0F0F0;
+    font-family: 'Times New Roman', Times, serif;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 10%;
+    
+ 
+}
+
+li:hover{
+    transform: translateY(-2px);
+    transition: transform 0.3s ease-out;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+li:active{
+    color:blue;
+}
+nav img{
+    width: 100px;
+    height: 100px;
+    transform:translate(-260px,-10px);
+    
+}
+h1{
+    color:white;
+    transform:translateX(-220px);
+    margin-top: 30px;
+
+
+    
+}
+.container{
+    margin-bottom: 40px;
+}
+.container img{
+    width: 400px;
+    height: 600px;
+}
+
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: space-between;
+}
+h2{
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 100px;
+    font-size: 100px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.cost{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.grid{
+    padding-bottom: 80px;
+}
+.container .film{
+    width: 400px;
+    height: 400px;
+}
+
+
+
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+   
+
+
+.about #originals{
+    width: 670px;
+    height: 500px;  
+    margin-left: 200px;
+
+
+}
+
+.ourmission{
+
+    display: flex;
+    justify-content: center;
+}
+.ourmission img{
+    border-radius: 10px;
+}
+.mission{
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 130%;
+    display: flex;
+    justify-content: center;
+    padding: 50px 170px 70px 190px;
+}
+
+input{
+    margin-bottom: 20px;
+    margin-right: 20px;
+    height: 30px;
+    width: 300px;
+
+
+}
+
+
+.form{
+
+   display: flex;
+   margin-left: 60px;
+   width: auto;
+   padding: 0;
+    justify-content: center;
+
+}
+.doubleform{
+    display: flex;
+}
+
+
+
+label{
+    display: block;
+}
+
+.contact{
+    display: flex;
+
+  
+}
+
+textarea{
+    width: 350px;
+    height: 200px;
+}
+
+
+.contactform{
+    width: 1000px;
+    transform: translateX(50px);
+}
+
+.contactmessage{
+    padding: 50px 100px 0px 200px;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+.contactform {
+    padding-top: 50px;
+}
+
+#contactcontainer{
+    display: flex;
+    padding-bottom: 50px;
+}
+
+label{
+    margin-bottom: 15px;
+    display: block;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+#submitcontact{
+    display: block;
+    margin-top: 20px;
+}
+/*it seems just moving the label should be enough
+to move everything*/
+
+#submitcontact{
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out;
+    font-size: 1em;
+
+}
+#submitcontact:hover{
+
+    transform: translateY(-5px);
+    color: white;
+    background-color: rgb(175, 156, 156);
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+#phone{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    margin-bottom: 0;
+    transform: translateY(5px);
+
+}
+#mail{
+    width: 30px;
+    height: 30px;
+    transform: translateY(5px);
+}
+#submitrepair{
+    display: block;
+    margin-bottom: 100px;
+    border-radius: 10px;
+}
+/*for future reference alwayysss if your dealing with flexbox 
+wrap the parent container with a solid red 1px border to ensure
+the parent container has the appropriate dimensions to import
+flexbox and move things around the way you want*/
+
+.productpage{
+    display:flex;
+    justify-content: center;
+    width: auto;
+    margin-left: 200px;
+    padding-right: 0px;
+  
+}
+.productdescription{
+    width: 500px;
+    height: 600px;
+    margin-left: 200px;
+}
+
+.productname{
+    color:black;
+    margin:0;
+    padding: 20px 0 20px 0;
+}
+.productimage img{
+    width: 620px;
+    height: 900px;
+    margin: 0 100px 0px 0;
+
+}
+
+.productprice{
+    font-size: 20px;
+    padding: 20px 0 20px 0;
+    margin: 0;
+    position: relative;
+    left: -230px;
+    width: 100px;
+
+}
+#cart{
+    width: 400px;
+    transform: translateX(-220px);
+    margin-top: 20px;
+    border-radius: 10px;
+}
+#rating{
+    transform: translateX(-220px);
+}
+#truck{
+    margin:0;
+    padding:0;
+    transform: translate(-40px,22px);
+    height:30px;
+    width:30px;
+}
+#freeship{
+    transform: translate(-175px,20px);
+
+}
+#counter{
+    transform: translateX(-219px);
+}
+.quantity-input{
+    width: 20px;
+    padding: 0 0 0 10px;
+    margin: 0;
+}
+#minus{
+    height: 35px;
+}
+#plus{
+    height: 35px;
+}
+
+.altangles{
+    display: flex;
+    margin-left: 93px;
+    position: relative;
+    width: 500px;
+}
+.altangles img{
+    width: 300px;
+    height: 450px;
+    margin: 20px 10px 30px 10px;
+
+}
+.altangleslimited{
+    display: flex;
+    margin-left: 100px;
+    width: 200px;
+    margin-bottom: 30px;
+}
+.altangleslimited img {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    position: relative;
+    right: 7px;
+}
+.productdescription *{
+    margin-bottom: 5px;
+    
+}
+.productdescription p{
+    transform: translate(-220px,50px);
+}
+.moreproducts{
+    display: flex;
+    position: relative;
+    top: 35px;
+    left: -220px;
+}
+.moreproducts img{
+    width: 175px;
+    height: 250px;
+    margin: 0 10px 50px 0;
+
+}
+.moreproducts2{
+    display: flex;
+    position: relative;
+    top: 35px;
+    left: -220px;
+}
+.moreproducts2 img{
+    width: 190px;
+    height: 190px;
+    margin: 0 10px 50px 0;
+
+}
+
+.altangles2{
+    margin-left: 85px;
+    position: relative;
+    left: 3px;
+
+
+}
+.altangles2 img{
+    width: 300px;
+    height: 300px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+#snoopy{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    right: -254px;
+    top: -20px;
+    margin-bottom: 20px;
+    
+}
+#beagle{
+    position: relative;
+    left: 155px;
+    bottom: 25px;
+    width: 450px;
+}
+.grid a{
+    text-decoration: none;
+}
+.grid a:visited{
+    color: black;
+}
+#counter {
+    display: flex; /* Use flexbox to align buttons and input horizontally */
+    align-items: center; /* Vertically align items in the middle */
+    gap: 10px; /* Space between buttons and input */
+    margin-bottom: 25px; /* Space below the counter */
+}
+
+#counter button {
+    background-color: #f0f0f0; /* Light grey background */
+    border: 1px solid #ccc; /* Light grey border */
+    padding: 8px 15px; /* Padding inside the buttons */
+    font-size: 1.2em; /* Larger font size for +/- */
+    cursor: pointer; /* Indicates it's clickable */
+    border-radius: 4px; /* Slightly rounded corners */
+    transition: background-color 0.2s; /* Smooth transition on hover */
+}
+
+#counter button:hover {
+    background-color: #e0e0e0; /* Slightly darker grey on hover */
+}
+
+#counter .quantity-input {
+    width: 60px; /* Fixed width for the input field */
+    padding: 8px; /* Padding inside the input */
+    text-align: center; /* Center the text/number */
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 4px; /* Slightly rounded corners */
+    font-size: 1.1em; /* Font size for the number */
+}
+
+/* --- Add to Cart Button --- */
+#cart {
+    background-color: #28a745; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 15px 30px; /* Generous padding */
+    font-size: 1.3em; /* Larger font size for the text */
+    cursor: pointer; /* Indicates it's clickable */
+    border-radius: 6px; /* Rounded corners */
+    transition: background-color 0.2s; /* Smooth transition on hover */
+    margin-bottom: 25px; /* Space below the button */
+    /* REMOVE any existing transform: translate from this ID if you had it previously */
+}
+
+#cart:hover {
+    background-color: #218838; /* Slightly darker green on hover */
+}
+#submitrepair {
+    background-color: #007bff; /* A clean, vibrant blue background */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.3em;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+    margin-bottom: 25px;
+    margin-left: 90px;
+}
+
+#submitrepair:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-1px); /* Slight lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25); /* Slightly larger shadow on hover */
+}
+#submitcontact{
+    background-color: #007bff; /* A clean, vibrant blue background */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.3em;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-bottom: 25px;
+    margin-left: 110px;
+}
+#submitcontact:hover{
+    background-color: #0056b3; /* Darker blue on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25); /* Slightly larger shadow on hover */
+}
+#submitrepair:active {
+    background-color: #004085; /* Even darker blue on click */
+    transform: translateY(0); /* "Press down" effect on click */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); /* Smaller shadow on click */
+}
+/* --- Styles for the entire .cost container (h4) --- */
+.container .cost {
+    margin-top: 10px;    /* Space between the image and the text block */
+}
+
+/* --- Styling for Product Names --- */
+.container .cost a {
+    font-weight: bold;     /* Make the name bold */
+    color: #34495e;        /* A dark, professional blue-grey for the name */
+}
+
+
+.productimage .film{
+    width: 620px;
+    height: 620px;
+}
+
+#instantart{
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    position: relative;
+    right: -91px;
+    top: -27px;
+ 
+}
