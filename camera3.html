@@ -1,3 +1,6 @@
+Here is the HTML code with the leading forward slashes removed from the file paths. This changes the paths from **root-relative** to **document-relative**, making them reference files based on their location relative to the current HTML file.
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,12 +15,12 @@
         <img src="pics/polaroid.png">
         <h1>Polaroid</h1>
         <ul>
-            <li><a href="/polaroid.html">Home</a></li>
-            <li><a href="/products.html">Cameras</a></li>
-            <li><a href="/films.html">Film</a></li>
-            <li><a href="/repairs.html">Repairs</a></li>
-            <li><a href="/about.html">About</a></li>
-            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="polaroid.html">Home</a></li>
+            <li><a href="products.html">Cameras</a></li>
+            <li><a href="films.html">Film</a></li>
+            <li><a href="repairs.html">Repairs</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
         </nav>
     </div>
@@ -42,7 +45,7 @@
             <h2 class="productprice">$129.00</h2>
             <div id="counter"><button id="minus">-</button><input type="text" class="quantity-input" value="1" ><button id="plus">+</button></div>
             <div><button id="cart">Add to Cart</button></div>
-            <div id="freeship"><img src="/pics/icons8-truck.gif" id="truck"><h5>Free U.S Shipping on Orders over $100</h5></div>
+            <div id="freeship"><img src="pics/icons8-truck.gif" id="truck"><h5>Free U.S Shipping on Orders over $100</h5></div>
 
             <p><strong>Details</strong></p>
             <p> Capture instant memories with the Polaroid OneStep Flash, a classic 1980s camera known for its bold red stripe and 
@@ -81,22 +84,23 @@
             <p><strong>More Products You'd Like:</strong></p>
             <br></br>
                 <div class="moreproducts">
-                    <a href="/camera1.html"><img src="/pics/polaroid1.jpg"></a>
-                    <a href="/camera8.html"><img src="/pics/polaroid8.jpg"></a>
-                    <a href="/camera9.html"><img src="/pics/polaroid9.jpg"></a>
-         
+                    <a href="camera1.html"><img src="pics/polaroid1.jpg"></a>
+                    <a href="camera8.html"><img src="pics/polaroid8.jpg"></a>
+                    <a href="camera9.html"><img src="pics/polaroid9.jpg"></a>
+            
+            
                 </div>
         </div>
         
     </div>
     
 
-
     <div class="altangles">
-            <img src="/pics/polaroid 3-2.jpeg">
-        <img src="/pics/polaroid 2-3.jpeg">
+            <img src="pics/polaroid 3-2.jpeg">
+        <img src="pics/polaroid 2-3.jpeg">
     </div>
         
-  
+    
 </body>
 </html>
+```
